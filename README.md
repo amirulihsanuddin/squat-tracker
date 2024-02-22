@@ -1,18 +1,25 @@
 Motion Tracker for Squat Exercise using Machine Learning
 
 Introduction
+
 Welcome to the Motion Tracker for Squat Exercise, a Final Year Project developed at UiTM. This project aims to evaluate the correctness of squat movements using machine learning models. The system assesses the squat's form and counts repetitions, providing users with real-time feedback.
+
 
 How to Use
 Run all for Working Prototype.ipynb and from there you have the options to choose a video or webcam
+
 The Motion Tracker features two models:
 
 Model 1: Focuses on squat repetitions and detects incorrect standing or squatting positions.
+
 Model 2: Analyzes squat form, identifying issues such as bending, knee caving in, or caving out.
+
 
 To switch webcams, modify the tracker() function in open_webcam within main.py.
 
+
 All the correct dataset for the correct squat perfomed that was collected was approved and the incorrect squat movement was personally collected by myself
+
 
 To visualize the squat performance graph, uncomment the accuracy array for the eight classes, the if-else statements, and the append statements for each class in the code. Run the code to generate graphs for each model.
 
