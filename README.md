@@ -17,6 +17,7 @@ All the correct dataset for the correct squat perfomed that was collected was ap
 To visualize the squat performance graph, uncomment the accuracy array for the eight classes, the if-else statements, and the append statements for each class in the code. Run the code to generate graphs for each model.
 
 #this is to remove a 0 when a 0 is detected between numbers
+
 filtered_up_values = [up_accuracy[i] for i in range(len(up_accuracy)) if i == len(up_accuracy) - 1 or up_accuracy[i] != 0 or up_accuracy[i - 1] == 0]
 filtered_down_values = [down_accuracy[i] for i in range(len(down_accuracy)) if i == len(down_accuracy) - 1 or down_accuracy[i] != 0 or down_accuracy[i - 1] == 0]
 filtered_bend_values = [bend_accuracy[i] for i in range(len(bend_accuracy)) if i == len(bend_accuracy) - 1 or bend_accuracy[i] != 0 or bend_accuracy[i - 1] == 0]
@@ -27,6 +28,7 @@ filtered_upbad_values = [upbad_accuracy[i] for i in range(len(upbad_accuracy)) i
 filtered_downbad_values = [downbad_accuracy[i] for i in range(len(downbad_accuracy)) if i == len(downbad_accuracy) - 1 or downbad_accuracy[i] != 0 or downbad_accuracy[i - 1] == 0]
 
 #to plot graph based on model 2
+
 plt.plot(filtered_good_values, label='Good',fillstyle='none', linestyle='solid')
 plt.plot(filtered_bend_values, label='Bend',fillstyle='none', linestyle='solid')
 plt.plot(filtered_cavein_values, label='Cave In',fillstyle='none', linestyle='solid')
@@ -39,6 +41,7 @@ plt.legend(loc=('lower left'))
 plt.show()
 
 #to plot graph based on model 1
+
 plt.plot(filtered_up_values, label='Up',fillstyle='none', linestyle='solid')
 plt.plot(filtered_down_values, label='Down',fillstyle='none', linestyle='solid')
 plt.plot(filtered_upbad_values, label='Up Bad',fillstyle='none', linestyle='solid')
